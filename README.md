@@ -19,6 +19,7 @@ API for DeltaPunishments
     <groupId>com.github.NegativeKB</groupId>
     <artifactId>PunishmentsAPI</artifactId>
     <version>VERSION</version>
+    <scope>provided</scope>
 </dependency>
 ```
 
