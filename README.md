@@ -15,6 +15,10 @@ API for DeltaPunishments
 **Dependency (type latest version in for version)**
 
 ```
-s
+<dependency>
+    <groupId>com.github.NegativeKB</groupId>
+    <artifactId>PunishmentsAPI</artifactId>
+    <version>VERSION</version>
+</dependency>
 ```
 
