@@ -16,4 +16,6 @@ public abstract class GUIManager {
 
     public abstract ConfigurableGUI getGUI(String input);
 
+    public abstract void reload();
+
 }
