@@ -28,4 +28,6 @@ public abstract class PunishManager {
     public abstract Map<Long, ArrayList<Object>> getWarnMap();
 
     public abstract Map<Long, ArrayList<Object>> getKickMap();
+
+    public abstract void reload();
 }
