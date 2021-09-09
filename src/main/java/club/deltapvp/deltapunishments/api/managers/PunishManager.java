@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Optional;
 
 public abstract class PunishManager {
 
@@ -15,7 +16,7 @@ public abstract class PunishManager {
     @Setter
     private static PunishManager instance;
 
-    public abstract Punishment findPunishment(String input);
+    public abstract Optional<Punishment> findPunishment(String input);
 
     public abstract void executePunishment(CommandSender staff, OfflinePlayer offender, Punishment punishment, boolean silent);
 

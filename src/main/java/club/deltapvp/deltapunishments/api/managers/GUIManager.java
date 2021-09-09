@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public abstract class GUIManager {
 
@@ -14,7 +15,7 @@ public abstract class GUIManager {
 
     public abstract ArrayList<ConfigurableGUI> getGUIs();
 
-    public abstract ConfigurableGUI getGUI(String input);
+    public abstract Optional<ConfigurableGUI> getGUI(String input);
 
     public abstract void reload();
 
