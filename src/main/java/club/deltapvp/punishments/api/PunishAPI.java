@@ -9,4 +9,6 @@ public abstract class PunishAPI {
     private static PunishAPI instance;
 
     public abstract PunishManager getPunishManager();
+
+    public abstract NoteManager getNoteManager();
 }
