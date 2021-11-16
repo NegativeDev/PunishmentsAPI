@@ -16,4 +16,6 @@ public interface NoteManager {
 
     ArrayList<Note> getNotes(UUID uuid);
 
+    void onDisable();
+
 }
