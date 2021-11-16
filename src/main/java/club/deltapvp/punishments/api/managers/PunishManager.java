@@ -1,6 +1,7 @@
-package club.deltapvp.deltapunishments.api.managers;
+package club.deltapvp.punishments.api.managers;
 
-import club.deltapvp.deltapunishments.api.structure.Punishment;
+import club.deltapvp.punishments.api.PunishAPI;
+import club.deltapvp.punishments.api.structure.Punishment;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.OfflinePlayer;
@@ -10,6 +11,10 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * @deprecated Moved to {@link PunishAPI#getPunishManager()}
+ */
+@Deprecated
 public abstract class PunishManager {
 
     @Getter

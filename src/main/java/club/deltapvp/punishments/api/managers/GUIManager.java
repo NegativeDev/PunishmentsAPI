@@ -1,6 +1,6 @@
-package club.deltapvp.deltapunishments.api.managers;
+package club.deltapvp.punishments.api.managers;
 
-import club.deltapvp.deltapunishments.api.structure.ConfigurableGUI;
+import club.deltapvp.punishments.api.structure.ConfigurableGUI;
 import lombok.Getter;
 import lombok.Setter;
 

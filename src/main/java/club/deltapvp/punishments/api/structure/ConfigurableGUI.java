@@ -1,4 +1,4 @@
-package club.deltapvp.deltapunishments.api.structure;
+package club.deltapvp.punishments.api.structure;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
