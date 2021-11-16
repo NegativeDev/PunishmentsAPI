@@ -8,6 +8,7 @@ import java.util.UUID;
 public class Note {
 
     private final int id;
+    private final UUID owner;
     private String message;
     private UUID addedBy;
     private final long dateAdded;

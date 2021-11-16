@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public interface NoteManager {
 
-    void createNote(String message, UUID addedBy);
+    void createNote(UUID owner, String message, UUID addedBy);
 
     void deleteNote(UUID uuid, Note note);
 
