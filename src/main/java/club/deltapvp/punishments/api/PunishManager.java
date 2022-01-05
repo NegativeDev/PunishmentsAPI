@@ -3,8 +3,9 @@ package club.deltapvp.punishments.api;
 import club.deltapvp.punishments.api.structure.Punishment;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.Optional;
 
@@ -15,7 +16,7 @@ public interface PunishManager {
       * @param input Input
       * @return If the string is valid punishment, return. If not, return empty.
       */
-     Optional<Punishment> findPunishment(String input);
+     Optional<Punishment> findPunishment(@NotNull String input);
 
      /**
       * Code to execute a punishment
@@ -27,16 +28,15 @@ public interface PunishManager {
       */
      void executePunishment(CommandSender staff, OfflinePlayer offender, Punishment punishment, boolean silent, boolean skipToFinal);
 
+     /**
+      * Get all active punishable offenses
+      * @return {@link Map} of {@link Punishment}
+      */
      Map<String, Punishment> getPunishmentMap();
 
-     Map<Long, ArrayList<Object>> getBanMap();
-
-     Map<Long, ArrayList<Object>> getMuteMap();
-
-     Map<Long, ArrayList<Object>> getWarnMap();
-
-     Map<Long, ArrayList<Object>> getKickMap();
-
      void reload();
+
+     @Nullable
+     PunishDataManager getDataManager();
     
 }

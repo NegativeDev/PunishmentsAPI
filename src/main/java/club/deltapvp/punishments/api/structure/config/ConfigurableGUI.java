@@ -1,4 +1,4 @@
-package club.deltapvp.punishments.api.structure;
+package club.deltapvp.punishments.api.structure.config;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -15,8 +15,7 @@ public class ConfigurableGUI {
     private final int rows;
     private final List<Integer> fillerSlots;
     private final boolean enabled;
-    private final Map<String, Map<String, Object>> slots;
-    private String fillerMaterial;
-    private int fillerData;
+    private final Map<String, ConfigurableItem> slots;
+    private final ConfigurableItem filler;
 
 }
