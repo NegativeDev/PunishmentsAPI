@@ -12,5 +12,6 @@ public class ConfigurableItem {
     private final Material material;
     private final byte data;
     private final List<String> lore;
+    private final int slot;
 
 }
