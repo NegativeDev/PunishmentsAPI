@@ -17,39 +17,7 @@ import java.util.function.Consumer;
  * across plugins.
  */
 public interface PunishDataManager {
-
-    Collection<PersistentPunishment> getBans();
-
-    Collection<PersistentPunishment> getBans(@NotNull UUID uuid);
-
-    Collection<PersistentPunishment> getBans(@NotNull Player player);
-
-    Collection<PersistentPunishment> getBans(@NotNull OfflinePlayer player);
-
-    Collection<PersistentPunishment> getMutes();
-
-    Collection<PersistentPunishment> getMutes(@NotNull UUID uuid);
-
-    Collection<PersistentPunishment> getMutes(@NotNull Player player);
-
-    Collection<PersistentPunishment> getMutes(@NotNull OfflinePlayer player);
-
-    Collection<PersistentPunishment> getKicks();
-
-    Collection<PersistentPunishment> getKicks(@NotNull UUID uuid);
-
-    Collection<PersistentPunishment> getKicks(@NotNull Player player);
-
-    Collection<PersistentPunishment> getKicks(@NotNull OfflinePlayer player);
-
-    Collection<PersistentPunishment> getWarns();
-
-    Collection<PersistentPunishment> getWarns(@NotNull UUID uuid);
-
-    Collection<PersistentPunishment> getWarns(@NotNull Player player);
-
-    Collection<PersistentPunishment> getWarns(@NotNull OfflinePlayer player);
-
+    
     /**
      * Get all punishments of a specified {@link PunishmentType}.
      * @param type {@link PunishmentType}
