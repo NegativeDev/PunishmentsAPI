@@ -66,14 +66,14 @@ public interface PunishDataManager {
 
     /**
      * Gets all punishments of a specific {@link Player}
-     * @param uuid {@link Player}
+     * @param player {@link Player}
      * @return {@link Collection} of {@link PersistentPunishment}
      */
     CompletableFuture<Collection<PersistentPunishment>> getPunishments(@NotNull Player player);
 
     /**
      * Gets all punishments of a specific {@link OfflinePlayer}
-     * @param uuid {@link OfflinePlayer}
+     * @param player {@link OfflinePlayer}
      * @return {@link Collection} of {@link PersistentPunishment}
      */
     CompletableFuture<Collection<PersistentPunishment>> getPunishments(@NotNull OfflinePlayer player);
