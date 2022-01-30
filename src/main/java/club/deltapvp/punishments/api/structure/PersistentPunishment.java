@@ -12,6 +12,7 @@ public class PersistentPunishment {
 
     private final long id;
     private final String reason;
+    private final PunishmentType category;
     private final UUID bannedBy;
     private final UUID uuid;
     private final long time;
