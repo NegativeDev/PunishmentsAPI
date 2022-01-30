@@ -24,16 +24,18 @@ public interface PunishDataManager {
 
     /**
      * Updates a Punishment in the database
+     * @param category Category of the Punishment
      * @param id ID to the Punishment
      * @param updateFunction Code to be run before update
      */
-    CompletableFuture<Void> updatePunishment(long id, @NotNull Consumer<PersistentPunishment> updateFunction);
+    CompletableFuture<Void> updatePunishment(PunishmentType category, long id, @NotNull Consumer<PersistentPunishment> updateFunction);
 
     /**
      * Deletes the Punishment from the database
+     * @param category Category of the Punishment
      * @param id ID of the Punishment
      */
-    CompletableFuture<Void> deletePunishment(long id);
+    CompletableFuture<Void> deletePunishment(PunishmentType category, long id);
 
     /**
      * Deletes the Punishment from the database
@@ -43,15 +45,17 @@ public interface PunishDataManager {
 
     /**
      * Update the duration of the Punishment in the database
+     * @param category Category of the Punishment
      * @param id ID of the Punishment
      * @param duration Duration of the Punishment in {@link Long}
      */
-    CompletableFuture<Void> updateTime(long id, long duration);
+    CompletableFuture<Void> updateTime(PunishmentType category, long id, long duration);
 
     /**
      * Update the activity of the Punishment
+     * @param category Category of the Punishment
      * @param id ID of the Punishment
      * @param active Will the Punishment be active?
      */
-    CompletableFuture<Void> updateActive(long id, boolean active);
+    CompletableFuture<Void> updateActive(PunishmentType category, long id, boolean active);
 }
