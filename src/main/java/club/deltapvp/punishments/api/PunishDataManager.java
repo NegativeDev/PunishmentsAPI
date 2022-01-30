@@ -2,9 +2,12 @@ package club.deltapvp.punishments.api;
 
 import club.deltapvp.punishments.api.structure.PersistentPunishment;
 import club.deltapvp.punishments.api.structure.PunishmentType;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
+import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
@@ -21,6 +24,28 @@ public interface PunishDataManager {
      * @return {@link Collection} of {@link PersistentPunishment}
      */
     CompletableFuture<Collection<PersistentPunishment>> getPunishments(@NotNull PunishmentType type);
+
+    /**
+     * Gets all punishments of a specific {@link UUID}
+     * @param uuid {@link UUID}
+     * @return {@link Collection} of {@link PersistentPunishment}
+     */
+    CompletableFuture<Collection<PersistentPunishment>> getPunishments(@NotNull UUID uuid);
+
+    /**
+     * Gets all punishments of a specific {@link Player}
+     * @param uuid {@link Player}
+     * @return {@link Collection} of {@link PersistentPunishment}
+     */
+    CompletableFuture<Collection<PersistentPunishment>> getPunishments(@NotNull Player uuid);
+
+    /**
+     * Gets all punishments of a specific {@link OfflinePlayer}
+     * @param uuid {@link OfflinePlayer}
+     * @return {@link Collection} of {@link PersistentPunishment}
+     */
+    CompletableFuture<Collection<PersistentPunishment>> getPunishments(@NotNull OfflinePlayer uuid);
+
 
     /**
      * Updates a Punishment in the database
